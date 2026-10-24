@@ -1,0 +1,72 @@
+/*
+===========================================================================
+flare (Call of Duty, 2003), adapted for UO converters (2004).
+
+Distributed under the terms in COPYING (GPL version 3 or later,
+with id Software's additional terms).
+
+Biased x87 float-to-integer rounding.
+===========================================================================
+*/
+
+/* Biased x87 float-to-integer rounding. Requires round-to-nearest-even mode. */
+#ifndef XMODEL_Q_ROUND_H
+#define XMODEL_Q_ROUND_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/*
+=============
+RoundToInt
+=============
+*/
+__inline int RoundToInt( float value ) {
+	double bias = 9.31322574615478515625e-10;
+	int i;
+	__asm {
+		fld value
+		fadd bias
+		fistp i
+	}
+	return i;
+}
+
+/*
+=============
+FastFloor
+=============
+*/
+__inline const int FastFloor( float value ) {
+	double bias = 0.49999999906867743;
+	int i;
+	__asm {
+		fld value
+		fsub bias
+		fistp i
+	}
+	return i;
+}
+
+/*
+=============
+FastCeil
+=============
+*/
+__inline const int FastCeil( float value ) {
+	double bias = 0.49999999906867743;
+	int i;
+	__asm {
+		fld value
+		fadd bias
+		fistp i
+	}
+	return i;
+}
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

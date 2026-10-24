@@ -1,0 +1,67 @@
+{
+  "module": "character",
+  "original_sha256": "9642b67eaf14b05ca10348274f7ca2c7d569e5fa2dfeeca5e48802b96043def0",
+  "compile_flag_sets": {
+    "nogs_ehsc_ob2": [
+      "/nologo",
+      "/c",
+      "/O2",
+      "/Ob2",
+      "/GF",
+      "/Gy",
+      "/MT",
+      "/DWIN32",
+      "/DNDEBUG",
+      "/D_WINDOWS",
+      "/D_USRDLL",
+      "/EHsc"
+    ],
+    "nogs_ehsc_ob2_oyoff": [
+      "/nologo",
+      "/c",
+      "/O2",
+      "/Ob2",
+      "/GF",
+      "/Gy",
+      "/MT",
+      "/DWIN32",
+      "/DNDEBUG",
+      "/D_WINDOWS",
+      "/D_USRDLL",
+      "/EHsc",
+      "/Oy-"
+    ]
+  },
+  "translation_units": [
+    {
+      "source": "src/deffiles/character/stdafx.cpp",
+      "obj": "stdafx.obj",
+      "flags": "nogs_ehsc_ob2"
+    },
+    {
+      "source": "src/deffiles/character/assertive.cpp",
+      "obj": "assertive.obj",
+      "flags": "nogs_ehsc_ob2_oyoff"
+    },
+    {
+      "source": "src/deffiles/character/character.cpp",
+      "obj": "character.obj",
+      "flags": "nogs_ehsc_ob2",
+      "compile_path": ".\\character.cpp"
+    }
+  ],
+  "link_flags": [
+    "/nologo",
+    "/DLL",
+    "/BASE:0x10000000"
+  ],
+  "link_libraries": [
+    "kernel32.lib",
+    "user32.lib",
+    "gdi32.lib"
+  ],
+  "stamp": {
+    "timestamp": 1074552345
+  },
+  "toolchain": "vc71"
+}

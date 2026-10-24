@@ -1,0 +1,121 @@
+{
+  "module": "xanim",
+  "original_sha256": "e116dfbeeea7cb18825837a9202493a6b95b22f383bb058b3a07da0c4e419dee",
+  "compile_flag_sets": {
+    "vc71_debug_mt": [
+      "/nologo",
+      "/c",
+      "/Od",
+      "/Ob0",
+      "/ZI",
+      "/RTC1",
+      "/Gy",
+      "/MT",
+      "/DWIN32",
+      "/D_DEBUG",
+      "/D_WINDOWS",
+      "/D_USRDLL"
+    ],
+    "vc71_debug_mt_ehsc": [
+      "/nologo",
+      "/c",
+      "/Od",
+      "/Ob0",
+      "/ZI",
+      "/RTC1",
+      "/Gy",
+      "/MT",
+      "/DWIN32",
+      "/D_DEBUG",
+      "/D_WINDOWS",
+      "/D_USRDLL",
+      "/EHsc"
+    ]
+  },
+  "translation_units": [
+    {
+      "source": "src/deffiles/xanim/animation.cpp",
+      "obj": "animation.obj",
+      "flags": "vc71_debug_mt_ehsc",
+      "compile_path": "c:\\projects\\cod\\src\\tools\\converters\\xconverter\\animation.cpp"
+    },
+    {
+      "source": "src/deffiles/xanim/assertive.cpp",
+      "obj": "assertive.obj",
+      "flags": "vc71_debug_mt_ehsc"
+    },
+    {
+      "source": "src/deffiles/xanim/buildmds.cpp",
+      "obj": "buildmds.obj",
+      "flags": "vc71_debug_mt_ehsc",
+      "compile_path": "c:\\projects\\cod\\src\\tools\\converters\\xconverter\\buildmds.cpp"
+    },
+    {
+      "source": "src/deffiles/xanim/cmdlib.cpp",
+      "obj": "cmdlib.obj",
+      "flags": "vc71_debug_mt_ehsc"
+    },
+    {
+      "source": "src/deffiles/xanim/com_math.c",
+      "obj": "com_math.obj",
+      "flags": "vc71_debug_mt",
+      "compile_path": "c:\\projects\\cod\\src\\common\\com_math.c"
+    },
+    {
+      "source": "src/deffiles/xanim/q_parse.c",
+      "obj": "q_parse.obj",
+      "flags": "vc71_debug_mt",
+      "compile_path": "c:\\projects\\cod\\src\\common\\q_parse.c"
+    },
+    {
+      "source": "src/deffiles/xanim/q_shared.c",
+      "obj": "q_shared.obj",
+      "flags": "vc71_debug_mt",
+      "compile_path": "c:\\projects\\cod\\src\\common\\q_shared.c"
+    },
+    {
+      "source": "src/deffiles/xanim/script.cpp",
+      "obj": "script.obj",
+      "flags": "vc71_debug_mt_ehsc",
+      "compile_path": "c:\\projects\\cod\\src\\tools\\converters\\xconverter\\script.cpp"
+    },
+    {
+      "source": "src/deffiles/shared/vector.cpp",
+      "obj": "vector.obj",
+      "flags": "vc71_debug_mt_ehsc",
+      "compile_path": "c:\\projects\\cod\\src\\tools\\converters\\xconverter\\vector.cpp"
+    },
+    {
+      "source": "src/deffiles/xanim/stdafx.cpp",
+      "obj": "stdafx.obj",
+      "flags": "vc71_debug_mt_ehsc"
+    },
+    {
+      "source": "src/deffiles/xanim/xanimconverter.cpp",
+      "obj": "xanimconverter.obj",
+      "flags": "vc71_debug_mt_ehsc"
+    }
+  ],
+  "link_flags": [
+    "/nologo",
+    "/DLL",
+    "/BASE:0x10000000",
+    "/DEBUG",
+    "/INCREMENTAL",
+    "/OPT:NOREF",
+    "/OPT:NOICF"
+  ],
+  "link_libraries": [
+    "kernel32.lib",
+    "user32.lib",
+    "gdi32.lib",
+    "libcpmtd.lib"
+  ],
+  "stamp": {
+    "timestamp": 1083304240,
+    "rsds_guid_hex": "abb0e299e0e9724db4ab18cad971c841",
+    "rsds_age": 4
+  },
+  "toolchain": "vc71",
+  "pdb_path": "c:\\Projects\\Cod\\src\\Tools\\converters\\xconverter\\xanimconverter___Win32_Debug0\\xanim.pdb"
+}
